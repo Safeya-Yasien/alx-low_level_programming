@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Prints quote
  *
  * Return: zero on success
