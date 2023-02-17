@@ -8,7 +8,7 @@
  */
 int main()
 {
-for(int i = a; i <= z; i++)
+for(int i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
 }
