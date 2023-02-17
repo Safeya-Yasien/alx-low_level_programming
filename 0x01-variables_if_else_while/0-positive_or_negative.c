@@ -2,6 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
+/**
+*
+*main - main randow number
+*
+*Return: zero on success
+*
+*/
 
 /* betty style doc for function main goes there */
 int main(void)
@@ -18,3 +25,4 @@ int main(void)
   else
     printf("is zero");
 	return (0);
+}
