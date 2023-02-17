@@ -8,9 +8,10 @@
  */
 int main()
 {
-for(char i = 'a'; i <= 'z'; i++)
+char a;
+for(a = 'a'; a <= 'z'; a++)
 {
-putchar(i);
+putchar(a);
 }
 putchar('\n');
  return (0);
