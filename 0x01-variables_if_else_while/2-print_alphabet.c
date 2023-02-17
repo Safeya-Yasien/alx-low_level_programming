@@ -2,9 +2,9 @@
 /**
  *main - lower alphabet
  *
- *
  *print alphabet by putchar function which print without press any tab
  *
+ *Return: zero of success
  */
 int main(void)
 {
