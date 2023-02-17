@@ -8,11 +8,14 @@
  */
 int main(void)
 {
-char a;
-for (a = 48; a <= 57; a++)
+int n = 48;
+while (n <= 57)
 {
-putchar(a);
+putchar(n);
+if (n < 57)
+{
 putchar(',');
+}
 }
 putchar('\n');
 return (0);
