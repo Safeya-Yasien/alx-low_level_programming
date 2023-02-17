@@ -3,16 +3,16 @@
  *main - lower alphabet
  *
  *
- *
+ *print alphabet by putchar function which print without press any tab
  *
  */
 int main()
 {
 char a;
-for(a = 'a'; a <= 'z'; a++)
+for (a = 'a'; a <= 'z'; a++)
 {
 putchar(a);
 }
 putchar('\n');
- return (0);
+return (0);
 }
