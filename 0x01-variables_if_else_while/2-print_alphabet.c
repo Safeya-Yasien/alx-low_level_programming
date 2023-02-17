@@ -8,9 +8,9 @@
  */
 int main()
 {
-while(26--)
+for(int i = 97; i <= 122; i++)
 {
- putchar();
+ putchar(i);
 }
  return (0);
 }
