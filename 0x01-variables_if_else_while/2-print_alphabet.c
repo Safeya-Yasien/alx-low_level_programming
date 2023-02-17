@@ -6,7 +6,7 @@
  *print alphabet by putchar function which print without press any tab
  *
  */
-int main()
+int main(void)
 {
 char a;
 for (a = 'a'; a <= 'z'; a++)
