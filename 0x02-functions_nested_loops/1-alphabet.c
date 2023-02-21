@@ -2,14 +2,14 @@
 #include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 void print_alphabet(void)
 {
 char a;
-for(a = 'a'; a <= 'z'; a++)
+for (a = 'a'; a <= 'z'; a++)
 {
 putchar(a);
 }
