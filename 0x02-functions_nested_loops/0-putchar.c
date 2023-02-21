@@ -9,6 +9,7 @@
  */
 int main(void)
 {
+
 /*puthcar take only one char*/
 putchar('_');
 putchar('p');
