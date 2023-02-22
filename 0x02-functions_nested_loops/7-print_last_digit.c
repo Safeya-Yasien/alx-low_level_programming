@@ -12,5 +12,6 @@ if (n < 0)
 {
 return (n * -1);
 }
+putchar(n + '0');
 return (n % 10);
 }
