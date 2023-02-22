@@ -3,7 +3,9 @@
 /**
   *  adds two integers and returns the result.
   *
-  *@a,b the two integers
+  *@a the first integer
+  *
+  *@b the second iteger
   *
   * Return: sum of two numbers a and b
   */
