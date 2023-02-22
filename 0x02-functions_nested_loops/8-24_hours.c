@@ -18,12 +18,12 @@ for (k = 0; k <= 5; k++)
 {
 for (j = 0; j <= 9; j++)
 {
-putchar(c + '0');
-putchar(i + '0');
-putchar(':');
-putchar(k + '0');
-putchar(j + '0');
-putchar('\n');
+_putchar(c + '0');
+_putchar(i + '0');
+_putchar(':');
+_putchar(k + '0');
+_putchar(j + '0');
+_putchar('\n');
 }
 }
 }
