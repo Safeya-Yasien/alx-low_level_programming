@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
-  * main - Write a function that checks for a digit (0 through 9).
-  * Return: one if it is digit
-  * Return: zero otherwise
-  */
-
+ * main - Write a function that checks for a digit (0 through 9).
+ * Return: one if it is digit
+ * Return: zero otherwise
+ */
 int _isdigit(int c)
 {
 if (c >= 48 && c <= 57)
