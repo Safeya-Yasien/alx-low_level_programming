@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Write a function that checks for a digit (0 through 9).
  * Return: one if it is digit
