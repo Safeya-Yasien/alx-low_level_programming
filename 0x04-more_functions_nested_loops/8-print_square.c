@@ -19,5 +19,8 @@ _putchar('#');
 _putchar('\n');
 }
 }
+else
+{
 putchar('\n');
+}
 }
