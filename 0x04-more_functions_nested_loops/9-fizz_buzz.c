@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
-  * main - Write a program that prints the numbers from 1 to 100, 
-  * followed by a new line. 
-  * But for multiples of three print Fizz instead of the number
-  * and for the multiples of five print Buzz. 
-  * For numbers which are multiples of both three and five print FizzBuzz.
-  *
-  * Return: zero on success
-  */
+ * main - Prints the numbers 1 - 100,
+ *   instead of multiples of 3, print Fizz
+ *   instead of multiples of 5, print Buzz
+ *   for multiples of 3 and 5, print FizzBuzz.
+ *
+ * Return: 0 on success.
+ */
 
 int main(void)
 {
@@ -19,17 +18,17 @@ if (i % 3 == 0 && i % 5 == 0)
 {
 printf("FizzBuzz");
 }
-else if(i % 5 == 0)
-{
-printf("Buzz");
-}
-else if (i % 3 == 0)
+else if(i % 3 == 0)
 {
 printf("Fizz");
 }
+else if (i % 5 == 0)
+{
+printf("Buzz");
+}
 else
 {
-printf("%d",i);
+printf("%d", i);
 }
 if (i != 100)
 {
