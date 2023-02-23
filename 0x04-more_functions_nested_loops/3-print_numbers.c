@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
-  * main - Write a function that prints the numbers, from 0 to 9, followed by a new line.
-  *
-  * Return: zero on success
-  */
-
+ * print_numbers -  prints the numbers, from 0 to 9, followed by a new line.
+ * @i: loop variable
+ * Return: nothing
+ */
 void print_numbers(void)
 {
 int i;
