@@ -17,5 +17,4 @@ putchar(j % 10 + '0');
 }
 putchar('\n');
 }
-return;
 }
