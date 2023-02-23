@@ -7,11 +7,11 @@
  
 int main(void)
 {
-long long int n1 = 0, n2 = 1, next, i;
+long n1 = 0, n2 = 1, next, i;
 next = n1 + n2;
 for (i = 3; i <= 50; i++)
 {
-printf("%lld, ", next);
+printf("%ld, ", next);
 n1 = n2;
 n2 = next;
 next = n1 + n2;
