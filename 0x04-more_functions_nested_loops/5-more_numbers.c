@@ -1,20 +1,18 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * more_numbers - prints the range 0-14 ten times.
- * Return: nothing.
+ * more_numbers - Prints the numbers 0-14 ten times.
  */
 void more_numbers(void)
 {
-int i, j;
-for (i = 0; i <= 10; i++)
+int num, count;
+for (count = 0; count <= 9; count++)
 {
-for (j = 0; j <= 14; j++)
+for (num = 0; num <= 14; num++)
 {
-if (j >= 10)
-{
-_putchar(j / 10 + '0');
-}
-_putchar(j % 10 + '0');
+if (num > 9)
+_putchar((num / 10) + '0');
+_putchar((num % 10) + '0');
 }
 _putchar('\n');
 }
