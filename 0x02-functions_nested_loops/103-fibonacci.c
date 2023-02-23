@@ -7,7 +7,7 @@
 
 int main(void)
 {
-unsigned long n1 = 0, n2 = 1, next, sum;
+long n1 = 0, n2 = 1, next, sum;
 next = n1 + n2;
 while (1)
 {
@@ -23,6 +23,6 @@ n1 = n2;
 n2 = next;
 next = n1 + n2;
 }
-printf("%lu\n", sum);
+printf("%ld\n", sum);
 return (0);
 }
