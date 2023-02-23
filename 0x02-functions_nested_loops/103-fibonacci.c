@@ -7,7 +7,7 @@
 
 int main(void)
 {
-unsigned long n1 = 0, n2 = 1, next, i, sum;
+unsigned long n1 = 0, n2 = 1, next, sum;
 next = n1 + n2;
 while(1)
 {
