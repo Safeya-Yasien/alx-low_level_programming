@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * print_triangle - Prints a triangle, using the character #.
- * @size: The size of the triangle.
+ * print_triangle - draws a triangle using multiple terminal lines and #'s.
+ * @size: the height of the triangle.
  */
 void print_triangle(int size)
 {
