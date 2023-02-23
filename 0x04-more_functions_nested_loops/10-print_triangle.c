@@ -4,8 +4,9 @@
  * print_triangle - draws a triangle using multiple terminal lines and #'s.
  * @size: the height of the triangle.
  */
-void print_triangle(int size)
+int main()
 {
+    int size=10;
 int i, j, c;
 if (size <= 0)
 {
@@ -19,7 +20,7 @@ for (j = i; j <= size; j++)
 {
 putchar(' ');
 }
-for (c = 0; c < i; c++)
+for (c = 0; c <= i; c++)
 {
 putchar('#');
 }
