@@ -11,7 +11,7 @@ while (str[index++])
 {
 len++;
 }
-for (index = (len / 2); index < len; index ++)
+for (index = (len / 2)-1; index < len; index ++)
 {
 _putchar(str[index]);
 }
