@@ -14,6 +14,7 @@ int length = 0, i;
 while (*s != '\0')
 {
 length++;
+s++;
 }
 for (i = length - 1; i >= 0; i--)
 {
