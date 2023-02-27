@@ -16,7 +16,7 @@ while (*s != '\0')
 len++;
 s++;
 }
-for (index = len - 1; index >= len / 2; index--)
+for (index = len - 1; index >= 0; index--)
 {
 putchar(s[index]);
 }
