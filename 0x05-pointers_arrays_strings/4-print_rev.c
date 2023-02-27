@@ -11,7 +11,7 @@ while (s[index++])
 {
 len++;
 }
-for (index = 0; index < len; index += 2)
+for (index = 0; index < len; index ++)
 {
 _putchar(s[index]);
 }
