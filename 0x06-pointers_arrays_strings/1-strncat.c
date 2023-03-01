@@ -17,5 +17,6 @@ for (i = 0; src[i] && i < n; i++)
 {
 dest[i + length] = src[i];
 }
+dest[i + length] = '\0';
 return (dest);
 }
