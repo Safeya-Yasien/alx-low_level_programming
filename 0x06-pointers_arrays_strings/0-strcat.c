@@ -12,9 +12,10 @@ while (dest[index++])
 {
 length++;
 }
-for (i = 0; src[i]; i++)
+for (i = 0; src[i] != '\0'; i++)
 {
-dest[length++] = src[i];
+dest[i + length] = src[i];
 }
+dest[i + length] = '\0';
 return (dest);
 }
