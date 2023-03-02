@@ -11,19 +11,18 @@ char *cap_string(char *str)
 {
 int i, j;
 char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-for (i = 0; str[i]; i++)
+while (str[i])
 {
-if (str[i] >= 'a' && str[i] <= 'z')
+j = 0;
+while (j < 13)
+{
+if ((str[i] >= 'a' && str[i] <= 'z') && (i == 0 || str[i-1] == sep[j])
 {
 str[i] = str[i] - 32;
 }
-for (j = 0; sep[j] != '\0'; j++)
-{
-if (sep[j] == str[i])
-{
-break;
+j++;
 }
-}
+i++;
 }
 return (str);
 }
