@@ -9,38 +9,18 @@
  */
 char *leet(char *str)
 {
-int i = 0, len = 0, index = 0;
-while (str[index])
+int i, j;
+char lower[] = {'a', 'e', 'o', 't', 'l', '\0'},
+upper[] = {'A', 'E', 'O', 'T', 'L', '\0'},
+numbers[] = {'4', '3', '0', '7', '1', '\0'};
+for (i = 0; str[i] != '\0'; i++)
 {
-len++;
-index++;
+for (j = 0; j < 5; j++)
+{
+if (str[i] == lower[j] || str[i] == upper[j])
+{
+str[i] = numbers[j];
 }
-for (i = 0; i < len; i++)
-{
-if (str[i] == 'a' || str[i] == 'A')
-{
-str[i] = '4';
-continue;
-}
-else if (str[i] == 'e' || str[i] == 'E')
-{
-str[i] = '3';
-continue;
-}
-else if (str[i] == 'o' || str[i] == 'O')
-{
-str[i] = '0';
-continue;
-}
-else if (str[i] == 't' || str[i] == 'T')
-{
-str[i] = '7';
-continue;
-}
-else if (str[i] == 'l' || str[i] == 'L')
-{
-str[i] = '1';
-continue;
 }
 }
 return (str);
