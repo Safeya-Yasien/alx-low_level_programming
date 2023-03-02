@@ -13,7 +13,7 @@ while (dest[index++])
 {
 length++;
 }
-for (i = 0; src[i] && i < n; i++)
+for (i = 0; src[i]; i++)
 {
 dest[i + length] = src[i];
 }
