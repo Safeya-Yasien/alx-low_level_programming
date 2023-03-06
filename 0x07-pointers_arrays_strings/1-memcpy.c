@@ -5,6 +5,7 @@
  * @dest: pointer to desitnation array
  * @src: pointer to the sorce array
  * @n: number of bytes to be copied from source to destination
+ * Return: destenation
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
