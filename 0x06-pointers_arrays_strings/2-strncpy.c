@@ -17,8 +17,6 @@ while (src[index])
 length++;
 index++;
 }
-printf("%d", length);
-printf("\n%d\n", index);
 for (i = 0; src[i] && i < n; i++)
 {
 dest[i] = src[i];
