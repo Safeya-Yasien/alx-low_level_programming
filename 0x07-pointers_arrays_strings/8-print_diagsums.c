@@ -21,5 +21,5 @@ for (i = 0; i < size; i++)
 second_sum += a[i];
 a -= size;
 }
-printf("%d %d", main_sum, second_sum);
+printf("%d, %d\n", main_sum, second_sum);
 }
