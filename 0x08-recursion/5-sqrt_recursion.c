@@ -19,10 +19,11 @@ return (-1);
 return (_find_sqrt(num, root + 1));
 }
 /**
- * -sqrt_recursion - return natrual squar of a nubmer
- * @n: the number to return the square
- * Return: if n is natural return n
- * if n doesn't have natural return -1
+ * _sqrt_recursion - Returns the natural square root of a number.
+ * @n: The number to return the square root of.
+ *
+ * Return: If n has a natural square root - the natural square root of n.
+ *         If n does not have a natural square root - -1.
  */
 int _sqrt_recursion(int n)
 {
