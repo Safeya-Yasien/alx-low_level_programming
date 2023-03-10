@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "main"
 /**
  * main - Program that takes first two integer arguments and prints the product
  * @argc: Number of command line arguments
@@ -19,9 +19,7 @@ else
 {
 j = 1;
 for (i = 1; i < 3; i++)
-{
 j *= atoi(argv[i]);
-}
 printf("%d\n", j);
 }
 return (0);
