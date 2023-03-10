@@ -8,14 +8,18 @@
  */
 int main(int argc, char *argv[])
 {
-if (argc == 0 || argc == 1)
+int i, sum = 1;
+if (argc == 1 || argc == 2)
 {
-printf("error\n");
-return (1);
+printf("error\n");   
 }
 else
 {
-printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+for (i = 1; i < 3; i++)
+{
+sum *= atoi(argv[i]);
+}
+printf("%d\n", sum);
 }
 return (0);
 }
