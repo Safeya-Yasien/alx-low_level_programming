@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * main - Program that takes first two integer arguments and prints the product
  * @argc: Number of command line arguments
