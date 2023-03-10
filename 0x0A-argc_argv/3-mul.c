@@ -1,25 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print multipulaction of number
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: zero on success
+ * main - Program that takes first two integer arguments and prints the product
+ * @argc: Number of command line arguments
+ * @argv: Array name
+ * Return: 1 if not enough arguments passed in, 0 otherwise
  */
 int main(int argc, char *argv[])
 {
-int i, sum = 1;
-if (argc == 1 || argc == 2)
+if (argc < 3)
 {
-printf("Error\n");   
+printf("Error\n");
+return (1);
 }
 else
 {
-for (i = 1; i < 3; i++)
-{
-sum *= atoi(argv[i]);
-}
-printf("%d\n", sum);
+printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 }
 return (0);
 }
