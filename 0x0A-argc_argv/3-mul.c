@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-if (argc < 3)
+if (argc == 0 || argc == 1)
 {
 printf("error\n");
 }
