@@ -3,7 +3,20 @@
 #include <string.h>
 #include <ctype.h>
 #include "main.h"
-void change_cents(int cents);
+/**
+ * changes- Helper function that does all the mathematics
+ * @cents: Passed in variable from main for calculations
+ * Return: The number of coins needed minimum for the passed in variable
+ */
+int changes(int cents)
+{
+int two_five = (cents) / 25;
+int ten = (cents % 25) / 10;
+int five = (((cents) % 25) % 10) / 5;
+int two = ((((cents) % 25) % 10) % 5) / 2;
+int one = (((((cents) % 25) % 10) % 5) % 2) / 1;
+return ("%d\n", two_five + ten + five + two + one);
+}
 /**
  * main - Program that takes in all integer arguments and returns the sum
  * @argc: Number of command line arguments
@@ -24,16 +37,8 @@ printf("0\n");
 }
 else
 {
-change_cents(atoi(argv[1]));
+int coin = changes(i);
+printf("%d\n", coin);
 }
 return (0);
-}
-void change_cents(int cents)
-{
-int two_five = (cents) / 25;
-int ten = (cents % 25) / 10;
-int five = (((cents) % 25) % 10) / 5;
-int two = ((((cents) % 25) % 10) % 5) / 2;
-int one = (((((cents) % 25) % 10) % 5) % 2) / 1;
-printf("%d\n", two_five + ten + five + two + one);
 }
