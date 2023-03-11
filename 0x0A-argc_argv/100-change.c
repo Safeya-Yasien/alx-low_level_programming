@@ -1,44 +1,63 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 #include "main.h"
+int change(int cents);
 /**
- * changes- Helper function that does all the mathematics
- * @cents: Passed in variable from main for calculations
- * Return: The number of coins needed minimum for the passed in variable
- */
-int changes(int cents)
-{
-int two_five = (cents) / 25;
-int ten = (cents % 25) / 10;
-int five = (((cents) % 25) % 10) / 5;
-int two = ((((cents) % 25) % 10) % 5) / 2;
-int one = (((((cents) % 25) % 10) % 5) % 2) / 1;
-return ("%d\n", two_five + ten + five + two + one);
-}
-/**
- * main - Program that takes in all integer arguments and returns the sum
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
+ * main - Entry Point
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
 if (argc != 2)
 {
-printf("Error\n");
+printf("%s\n", "Error");
 return (1);
 }
-int i = atoi(argv[1]);
-if (i < 0)
+else if (argc < 0)
 {
-printf("0\n");
-}
-else
-{
-int coin = changes(i);
-printf("%d\n", coin);
-}
 return (0);
+}
+printf("%d\n", change(atoi(argv[1])));
+return (0);
+}
+/**
+ * change - get change
+ * @cents: amount of coins from main function
+ * Return: change
+ */
+int change(int cents)
+{
+int q = 25, d = 10, n = 5, t = 2, p = 1;
+int coins;
+while (cents > 0)
+{
+while (cents >= q)
+{
+cents -= q;
+coins++;
+}
+while (cents >= d)
+{
+cents -= d;
+coins++;
+}
+while (cents >= n)
+{
+cents -= n;
+coins++;
+}
+while (cents >= t)
+{
+cents -= t;
+coins++;
+}
+while (cents >= p)
+{
+cents -= p;
+coins++;
+}
+}
+return (coins);
 }
