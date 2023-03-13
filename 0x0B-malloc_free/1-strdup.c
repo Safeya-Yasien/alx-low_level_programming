@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * _strdup -  function that returns a pointer to a newly allocated space in memory
+ * _strdup -  function that returns a pointer
+ * to a newly allocated space in memory
  * which contains a copy of the string given as a parameter
  * @str: the string whihc will be copied
  * Return: copied string
@@ -13,7 +14,7 @@ char *_strdup(char *str)
 {
 char *s;
 int i, len = 0, index = 0;
-while(str[index] != '\0')
+while (str[index] != '\0')
 {
 len++;
 index++;
