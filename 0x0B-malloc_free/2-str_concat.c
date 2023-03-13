@@ -33,7 +33,7 @@ len2++;
 index++;
 }
 size = len1 + len2;
-newly = malloc(sizeof(char) * (size));
+newly = malloc(sizeof(char) * (size + 1));
 if (newly == NULL)
 {
 return (NULL);
