@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * two_dim - function that returns a 
+ * alloc_grid - function that returns a
  * pointer to a 2 dimensional array of integers.
  * @width: number of rows in array
  * @height: number of coulmns in array
@@ -18,14 +18,14 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-two_dim = malloc(sizeof(int*) * (height));
+two_dim = malloc(sizeof(int *) * (height));
 if (two_dim == NULL)
 {
 return (NULL);
 }
 for (i = 0; i < height; i++)
 {
-two_dim = malloc(sizeof(int) * width);
+two_dim[i] = malloc(sizeof(int) * width);
 if (two_dim[i] == NULL)
 {
 for (; i >= 0; i--)
