@@ -18,7 +18,7 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-two_dim = malloc(sizeof(int) * (height*));
+two_dim = malloc(sizeof(int*) * (height));
 if (two_dim == NULL)
 {
 return (NULL);
