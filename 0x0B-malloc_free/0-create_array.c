@@ -21,5 +21,5 @@ for (i = 0; i < size; i++)
 {
 s[i] = c;
 }
-reutrn (s);
+return (s);
 }
