@@ -13,7 +13,7 @@ void *ptr;
 ptr = malloc(b);
 if (ptr == NULL)
 {
-  return (90);
+return (90);
 }
 return (ptr);
 }
