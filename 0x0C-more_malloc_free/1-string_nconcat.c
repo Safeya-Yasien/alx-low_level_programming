@@ -25,7 +25,7 @@ for (index = 0; s1[index]; index++)
 {
 len++;
 }
-ptr = malloc(sizeof(char) * (len + 1));
+ptr = malloc(sizeof(char) * (len + 1 + n));
 if (ptr == NULL)
 {
 return (NULL);
