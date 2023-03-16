@@ -11,18 +11,19 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *ptr;
-char *p = ptr;
+char *p;
 unsigned int index;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-ptr = malloc(nmemb * size);
+ptr = malloc(size * nmemb);
 if (ptr == NULL)
 {
 return (NULL);
 }
-for (index = 0; index < nmemb * size; index++)
+p = ptr;
+for (index = 0; index < (size * nmemb); index++)
 {
 p[index] = '\0';
 }
