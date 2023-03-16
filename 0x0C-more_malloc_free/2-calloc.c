@@ -24,7 +24,7 @@ return (NULL);
 }
 for (index = 0; index < nmemb * size; index++)
 {
-ptr[index] = 0;
+p[index] = '\0';
 }
 return (ptr);
 }
