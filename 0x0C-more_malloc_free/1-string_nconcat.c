@@ -35,7 +35,7 @@ for (index = 0; s1[index]; index++)
 ptr[i] = s1[index];
 i++;
 }
-for (index = 0; s2[index]; index++)
+for (index = 0; s2[index] && index < n; index++)
 {
 ptr[i] = s2[index];
 i++;
