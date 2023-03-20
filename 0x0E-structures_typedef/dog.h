@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include "dog.h"
+/*
+ * File: dog.h
+ * Desc: Header file that defines a new type struct dog.
+ */
 /**
  * struct dog - popy
  * @name: popy name
