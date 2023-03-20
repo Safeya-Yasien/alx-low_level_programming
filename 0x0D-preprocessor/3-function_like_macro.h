@@ -7,9 +7,6 @@
  *       that computes the absolute value of a number x.
  */
 
-#define ABS(x) if (x < 0) \
-	printf("%d", -x); \
-	else \
-	printf("%d", x);
+#define ABS(x) ((x) < 0 ? (-x) : (x))
 
 #endif
