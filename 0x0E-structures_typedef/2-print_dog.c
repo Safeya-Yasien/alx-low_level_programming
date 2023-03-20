@@ -1,11 +1,10 @@
+#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "dog.h"
 
 /**
- * print_dog - information about popy
- * @d: pointer to the allocation memory of members
- * Return: no thing
+ * print_dog - Prints a struct dog.
+ * @d: The struct dog to be printed.
  */
 
 void print_dog(struct dog *d)
