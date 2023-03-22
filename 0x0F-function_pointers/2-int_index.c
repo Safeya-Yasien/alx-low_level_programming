@@ -6,7 +6,7 @@
  * @array: the array
  * @size: the size of array
  * @cmp: function to compare
- * Return: index on succes 
+ * Return: index on succes
  *	-1 on faild
  */
 
@@ -28,10 +28,10 @@ int int_index(int *array, int size, int (*cmp)(int))
 	}
 	for (i = 0; i < size; i++)
 	{
-		if(cmp(array[i]) != 0)
+		if (cmp(array[i]) != 0)
 		{
 			return (i);
 		}
 	}
-       	return (-1);
+	return (-1);
 }
