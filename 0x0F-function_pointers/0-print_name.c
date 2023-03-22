@@ -4,7 +4,7 @@
 /**
  * print_name - print name of user
  * @name: the input name
- * (*f): pointer to function
+ * @*f: pointer to function
  * Return: nothing
  */
 
