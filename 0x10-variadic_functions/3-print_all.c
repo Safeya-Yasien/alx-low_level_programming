@@ -7,13 +7,14 @@
  * @format: list of types
  * Return: nothing
  */
+
 void print_all(const char * const format, ...)
 {
+	int i = 0;
 	va_list args;
 	char *str = "(nil)";
-	char *temp = NULL;
+	char *sarray = NULL;
 	char *separator = ", ";
-	int i = 0;
 
 	va_start(args, format);
 
@@ -31,19 +32,17 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(args, double));
 				break;
 			case 's':
-				temp = va_arg(args, char *);
-				if (temp == NULL)
-				{
-					temp = str;
-				}
-				printf("%s", temp);
+				sarray = va_arg(args, char *);
+				if (sarray == NULL)
+					sarray = str;
+				printf("%s", sarray);
 				break;
 			default:
 				i++;
 				continue;
 		}
-		if ((format[i + 1] != '\0') && (format[i] == 'c'
-					|| format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+		if ((format[i + 1] != '\0') && (format[i] == 'c' || format[i] == 'i' ||
+					format[i] == 'f' || format[i] == 's'))
 			printf("%s", separator);
 		i++;
 	}
