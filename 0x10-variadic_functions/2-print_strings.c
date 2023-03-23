@@ -3,11 +3,10 @@
 #include <stdarg.h>
 
 /**
- *
- *
- *
- *
- *
+ * print_strings - print strings
+ * @separator: print space and comma
+ * @n: number of strings to print
+ * Return: strings
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
