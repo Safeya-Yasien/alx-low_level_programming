@@ -10,7 +10,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	signed int index = 0, num = 0;
+	unsigned int index = 0, num = 0;
 
 
 	if (!b)
@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (b[index] != '\0')
 	{
-		if (b[index] != '0' && b[index] != '1')
+		if (b[index] != '0' || b[index] != '1')
 		{
 			return (0);
 		}
