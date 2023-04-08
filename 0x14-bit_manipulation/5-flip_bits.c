@@ -11,18 +11,18 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-    unsigned long int index = n ^ m;
-    unsigned int num_bits_flipped = 0;
-    
-    while (index != 0)
-    {
-        if ((index & 1) == 1)
-        {
-            num_bits_flipped++;
-        }
-        
-        index >>= 1;
-    }
-    
-    return num_bits_flipped;
+	unsigned long int index = n ^ m;
+	unsigned int num_bits_flipped = 0;
+
+	while (index != 0)
+	{
+		if ((index & 1) == 1)
+		{
+			num_bits_flipped++;
+		}
+
+		index >>= 1;
+	}
+
+	return num_bits_flipped;
 }
