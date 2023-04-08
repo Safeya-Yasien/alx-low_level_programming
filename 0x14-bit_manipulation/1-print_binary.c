@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /*
- * print_binary - print binary representation of a number
+ * print_binary - Prints the binary representation of a number.
  * @n: the decimal number
- * Return: binary nubmer
+ * Return: nothing
  */
 
 void print_binary(unsigned long int n)
