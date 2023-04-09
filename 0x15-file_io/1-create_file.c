@@ -32,6 +32,6 @@ int create_file(const char *filename, char *text_content)
 	if (fwrite == NULL)
 		return (-1);
 
-	close (fopen);
+	close(fopen);
 	return (1);
 }
