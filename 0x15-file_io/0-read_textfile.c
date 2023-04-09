@@ -17,15 +17,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t fread, fwrite, fclose;
 
 	if (filename == NULL)
-	{
 		return (0);
-	}
 
 	text = malloc(sizeof(char) * letters);
 	if (text == NULL)
-	{
 		return (0);
-	}
 
 	fopen = open(filename, O_RDONLY);
 
@@ -38,23 +34,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fread = read(fopen, text, letters);
 
 	if (fread == -1)
-	{
 		return (-1);
-	}
 
 	fwrite = write(STDOUT_FILENO, text, fread);
 
 	if (fwrite == -1)
-	{
 		return (-1);
-	}
 
 	fclose = close(fopen);
 
 	if (fclose == -1)
-	{
 		return (-1);
-	}
 
 	return (fread);
 }
