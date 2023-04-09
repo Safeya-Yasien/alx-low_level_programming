@@ -44,7 +44,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fwrite = write(STDOUT_FILENO, text, fread);
 
-	if (fwrtie == -1)
+	if (fwrite == -1)
 	{
 		return (-1);
 	}
