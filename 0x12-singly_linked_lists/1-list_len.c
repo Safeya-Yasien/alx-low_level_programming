@@ -1,8 +1,3 @@
-/*
- * File: 1-list_len.c
- * Auth: Brennan D Baraban
- */
-
 #include "lists.h"
 
 /**
@@ -12,6 +7,7 @@
  *
  * Return: The number of elements in h.
  */
+
 size_t list_len(const list_t *h)
 {
 	size_t elements = 0;
